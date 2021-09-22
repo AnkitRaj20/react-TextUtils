@@ -43,7 +43,7 @@ function App() {
         <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
       <Switch>
         <Route exact path="/about">
-          <About />
+          <About mode={mode} toggleMode={toggleMode} />
         </Route>
         <Route exact path="/">
           <TextForm
