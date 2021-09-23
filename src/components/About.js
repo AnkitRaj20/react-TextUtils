@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 const About = (props) => {
-    const [myStyle, setStyle] = useState({
-        color: 'white',
-        backgroundColor: 'black'
-    })
+    
 
   return (
     <div className="container" style={{backgroundColor: props.mode === 'dark'?'#042743':'white',color:props.mode === 'light'?'black':'white'}}>
@@ -19,6 +16,7 @@ const About = (props) => {
               data-bs-target="#collapseOne"
               aria-expanded="true"
               aria-controls="collapseOne"
+              
             >
               Accordion Item #1
             </button>
